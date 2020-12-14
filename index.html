@@ -1,35 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>REcipe Template</title>
-        
-    </head>
-    <body>
-        <div itemscope itemtype="https://schema.org/Recipe">
-          <span itemprop="name" class="name">Mom's World Famous Banana Bread</span>
-          <img itemprop="image" src="bananabread.jpg" class="image" />
-        
-          <span itemprop="description" class="description"
-            >This classic banana bread recipe comes from my mom -- the walnuts add a
-            nice texture and flavor to the banana bread.</span>
-        
-          Cook time: <meta itemprop="cookTime" content="PT1H" class="cook-time" />1 hour
-          Yield: <span itemprop="recipeYield" class="yield">2 People</span>
-        
-          <div class="ingredient-container">
-            <span itemprop="recipeIngredient">3 or 4 ripe bananas, smashed</span>
-            <span itemprop="recipeIngredient">1 egg</span>
-            <span itemprop="recipeIngredient">3/4 cup of sugar</span>
-          </div>
-        
-          <span itemprop="recipeInstructions" class="instructions">
-            Instructions:
-          </span>
-        </div>
-        <script src="recipeConversion.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Recipe",
+          "author": "John Smith",
+          "cookTime": "PT1H",
+          "datePublished": "2009-05-08",
+          "description": "This classic banana bread recipe comes from my mom -- the walnuts add a nice texture and flavor to the banana bread.",
+          "image": "bananabread.jpg",
+          "recipeIngredient": [
+            "3 or 4 ripe bananas, smashed",
+            "1 egg",
+            "3/4 cup of sugar"
+          ],
+          "interactionStatistic": {
+            "@type": "InteractionCounter",
+            "interactionType": "https://schema.org/Comment",
+            "userInteractionCount": "140"
+          },
+          "name": "Mom's World Famous Banana Bread",
+          "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": "240 calories",
+            "fatContent": "9 grams fat"
+          },
+          "prepTime": "PT15M",
+          "recipeInstructions": "Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the flour last. Pour the mixture into a loaf pan and bake for one hour.",
+          "recipeYield": "1 loaf",
+          "suitableForDiet": "https://schema.org/LowFatDiet"
+        }
+        </script>
+</head>
+<body>
 </body>
 </html>
-
