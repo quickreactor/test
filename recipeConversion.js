@@ -9,7 +9,7 @@ let elementArray = Array.from(document.body.children).filter((e) => e.innerText 
 let textArray = elementArray.map((e) => e.innerText)
 
 let name = textArray[0] + " " + textArray[1];
-let image = document.querySelectorAll("img")[1].src;
+let image = document.querySelector("img").src;
 let description = textArray[3];
 let cookTime = textArray[2].match(/\d{1,2}/g)[0];
 let yield = textArray[2].match(/\d{1,2}/g)[1];
